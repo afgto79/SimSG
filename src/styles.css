@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tile-radius: 12px;
+}
+
+html, body, #root { height: 100%; }
+body { @apply bg-brand-offwhite text-brand-anthracite; font-family: Roboto, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif; }
+h1, h2, h3, .kpi-number { font-family: 'Montserrat', 'Poppins', Roboto, sans-serif; }
+
+.container { @apply mx-auto px-4 sm:px-6 lg:px-8; }
+
+/* Header */
+.app-header { @apply sticky top-0 z-10 bg-brand-night text-white; }
+.app-header-inner { @apply container py-3 flex items-center justify-between; }
+.app-logo { @apply text-base font-semibold tracking-wide; }
+
+/* Cards */
+.kpi-card { @apply bg-white rounded-xl shadow-card border border-brand-grayLight/40; }
+.kpi-title { @apply text-xs uppercase tracking-wide text-gray-500; }
+.kpi-number { @apply mt-1 text-xl font-semibold text-brand-blue; }
+
+/* Section containers with subtle contrast */
+.section-card { @apply rounded-xl border border-brand-grayLight/50 shadow-card p-4; }
+.section-header { @apply text-sm font-semibold text-brand-anthracite mb-2 uppercase tracking-wide; }
+.kpi-subcard { @apply rounded-lg border border-brand-grayLight/40 bg-brand-offwhite/60 p-3; }
+
+/* Themed variants */
+.section-invest { @apply bg-brand-violet/10 border-brand-violet2/30; }
+.section-rc { @apply bg-brand-blue/10 border-brand-blue/30; }

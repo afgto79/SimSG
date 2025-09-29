@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Note: For password protection in v1, enable Site-wide password in Netlify UI (Site settings → Privacy → Password)
+# Netlify Identity (login/roles) can be added later if needed.
